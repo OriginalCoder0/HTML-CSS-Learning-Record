@@ -1,0 +1,298 @@
+<!--
+ * @Author: OriginalCoder
+ * @Date: 2020-09-10 21:34:31
+ * @version: 
+ * @LastEditors: OriginalCoder
+ * @LastEditTime: 2020-09-15 15:21:10
+ * @Descripttion: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微博热搜榜</title>
+    <style>
+        .wrap {
+            width: 900px;
+            margin: 0 auto;
+            position: relative;
+            padding-top: 10rpx;
+        }
+        #left {
+            flex-direction: column;
+            width: 450px;
+            height: 750px;
+            background-image: linear-gradient(#e0dddd, #fff);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #right {
+            flex-direction: column;
+            width: 450px;
+            height: 750px;
+            color: #fff;
+            /* background-image: url(https://ww1.sinaimg.cn/bmiddle/ca6a0e02ly1gemi4jmvrlj20k00k0tav.jpg); */
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        #title1 {
+            font-size: 1.4rem;
+            font-weight: bold;
+            padding-left: 1ch;
+        }
+
+        #title2 {
+            color: #000;
+            font-size: 2.3rem;
+            font-weight: bold;
+            padding-left: 2ch;
+            padding-top: 20px;
+        }
+
+        .container1 {
+            padding-left: 1rem;
+        }
+
+        .container2 {
+            display: inline-block;
+            padding-top: 1rem;
+            padding-left: 3rem;
+            /* padding-left: 2rem; */
+        }
+
+        .top {
+            font-size: 20px;
+            margin-left: 120px;
+            position: relative;
+            font-weight: bold;
+        }
+
+        .content {
+            margin-left: 120px;
+            position: relative;
+        }
+
+        .box {
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .box img {
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 10px 10px 5px #888;
+        }
+
+        .box .txt {
+            margin-left: 20px;
+        }
+        .box .tags {
+            font-size: 5px;
+            color: #000;
+        }
+        .number {
+            color: #eb7350;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .badge1 {
+            width: 44px;
+            height: 16px;
+            color: #fff;
+            background: #ee0808;
+            text-align: center;
+            border-radius: 10px;
+            line-height: 16px;
+            overflow: hidden;
+            font-weight: normal;
+        }
+        .badge2 {
+            width: 44px;
+            height: 16px;
+            color: #fff;
+            background: #e25017;
+            text-align: center;
+            border-radius: 10px;
+            line-height: 16px;
+            overflow: hidden;
+            font-weight: normal;
+        }
+        .badge3 {
+            width: 44px;
+            height: 16px;
+            color: #fff;
+            background: #c7724b;
+            text-align: center;
+            border-radius: 10px;
+            line-height: 16px;
+            overflow: hidden;
+            font-weight: normal;
+        }
+        .badge4 {
+            width: 44px;
+            height: 16px;
+            color: #fff;
+            background: #e29b58;
+            text-align: center;
+            border-radius: 10px;
+            line-height: 16px;
+            overflow: hidden;
+            font-weight: normal;
+        }
+        .badge5 {
+            width: 44px;
+            height: 16px;
+            color: #fff;
+            background: #d6a16c;
+            text-align: center;
+            border-radius: 10px;
+            line-height: 16px;
+            overflow: hidden;
+            font-weight: normal;
+        }
+        
+        .topic {
+            font-size:20px;
+            font-weight: bold;
+            margin-bottom:8px;
+        }
+
+        .subtitle {
+            width: 310px;
+            color: #000;
+            font-size: 10px;
+            margin-top:3px;
+            margin-left: 3px;
+            word-break: break-all;
+            text-overflow: ellipsis;/**显示省略号**/
+            display: -webkit-box; /* 将对象作为伸缩盒子模型显示 */      
+            -webkit-box-orient: vertical; /* 设置或检索伸缩盒对象的子元素的排列方式 */
+            -webkit-line-clamp: 1; /** 显示的行数 **/
+            overflow: hidden;  /** 隐藏超出的内容 **/
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div id="left">
+            <p id="title1">微博热门话题</p>
+            <div class="container1">
+                <div class="box">
+                    <img src="https://wx2.sinaimg.cn/large/001WLsZ7ly1gilu1auknrj60dw0dwgmt02.jpg" width="95"
+                        height="95" alt="">
+                    <div class="txt">
+                        <span class="badge1">TOP1</span>
+                        <a href="https://3w.huanqiu.com/a/de583b/3zppNXp1KRQ?agt=20">
+                            <span class="topic">#华为高管回应芯片#</span>
+                            <div class="subtitle">芯片问题给了企业反思，没有选择就是最好的选择。“限制反而让大家有一个非常好的机会，危、机并存。”</div>
+                        </a>
+                        <div class="tags">
+                            <p><span class="number">8亿</span></span>次阅读，<span class="number">30万</span>次讨论</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://wx1.sinaimg.cn/large/005vnhZYly1gimcxhk77bj60dw0dwgmb02.jpg" width="95"
+                        height="95" alt="">
+                    <div class="txt">
+                        <span class="badge2">TOP2</span>
+                        <a href="https://weibo.com/ttarticle/p/show?id=2309354547871260409868">
+                            <sanp class="topic">#国产新冠灭火病毒疫苗#</sanp>
+                            <div class="subtitle">国药集团中国生物负责人就新冠灭活疫苗紧急使用和海外III期临床研究情况接受媒体采访时透露，<br>
+                                国药中国生物研制的两款新冠灭活疫苗紧急使用，已经接种了数十万人次，无一例明显不良反应，
+                                无一人感染；其中打完疫苗之后去海外高风险国家和地区的数万人，截至目前实现了零感染。</div>
+
+                        </a>
+                        <div class="tags">
+                            <p><span class="number">5亿</span>次阅读，<span class="number">20万</span>次讨论</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://wx1.sinaimg.cn/large/002TLsr9ly1gikhy8sbvmj60dw0dwgmd02.jpg" width="95"
+                        height="95" alt="">
+                    <div class="txt">
+                        <span class="badge3">TOP3</span>
+                        <a href="https://weibo.com/tv/show/1034:4547372995510298?from=old_pc_videoshow">
+                            <span class="topic">#外卖平台设置多等五分钟#</span>
+                            <div class="subtitle">有外卖平台回应，会为用户设置“我愿意多等5分钟/10分钟”按钮。你认为此举是否能缓解外卖员的“时间压力”？</div>
+                        </a>
+                        <div class="tags">
+                            <p><span class="number">4.8亿</span>次阅读，<span class="number">15万</span>次讨论</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://wx2.sinaimg.cn/large/001WLsZ7ly1gimh1pq6otj60cy0cymye02.jpg" width="95"
+                        height="95" alt="">
+                    <div class="txt">
+                        <span class="badge4">TOP4</span>
+                        <a href="https://s.weibo.com/weibo?q=%23%E9%AB%98%E6%A0%A1%E4%B8%8D%E5%BE%97%E4%BB%A5%E4%BB%BB%E4%BD%95%E6%96%B9%E5%BC%8F%E5%BC%BA%E8%BF%AB%E6%AF%95%E4%B8%9A%E7%94%9F%E7%AD%BE%E7%BA%A6%23#_loginLayer_1599810400574">
+                            <span class="topic">#宠物博主让狗当大胃王#</span>
+                            <div class="subtitle">某短视频平台上，当有人挑战喂狗几十种零食后，就有人不服，敢挑战100种。还有博主喂狗吃3斤的牛心，或是满满一大铁盆鸡腿。
+                                评论里有网友开玩笑，让博主教狗狗催吐。还有网友指出，博主为了卖货不择手段。除了让狗吃过量的食物外，还有人强迫狗吃辣椒、跳跳糖等。</div>
+                        </a>
+                        <div class="tags">
+                            <p><span class="number">4.1亿</span>次阅读，<span class="number">10万</span>次讨论</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://wx2.sinaimg.cn/large/001N9Ovwly1gimk9xqvvkj60dw0dw3z502.jpg" width="95"
+                        height="95" alt="">
+                    <div class="txt">
+                        <span class="badge5">TOP5</span>
+                        <a href="https://s.weibo.com/weibo?q=%23%E5%AF%B9%E4%BA%8E%E5%A5%B3%E6%80%A7%E8%83%96%E7%98%A6%E6%98%AF%E5%90%A6%E5%A4%AA%E8%8B%9B%E5%88%BB%E4%BA%86%23">
+                            <span class="topic">#对于女性胖瘦是否太苛刻了#</span>
+                            <div class="subtitle">近年来对于女性身材的主流审美多为“以瘦为美”，减肥伴随着许多女性的一生。你认为，人们对于女性胖瘦是否太苛刻了？</div>
+                        </a>
+                        <div class="tags">
+                            <p><span class="number">3.1亿次</span>次阅读，<span class="number">9万</span>次讨论</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <p id="title2">微博热门话题</p>
+            <div class="container2">
+                <div class="box">
+                    <img src="https://wx2.sinaimg.cn/large/001WLsZ7ly1gilu1auknrj60dw0dwgmt02.jpg" width="95"
+                        height="95" alt="">
+                    <div class="txt">
+                        <a href="https://3w.huanqiu.com/a/de583b/3zppNXp1KRQ?agt=20">
+                            <span class="topic">#华为高管回应芯片#</span>
+                            <div class="subtitle">芯片问题给了企业反思，没有选择就是最好的选择。“限制反而让大家有一个非常好的机会，危、机并存。”</div>
+                        </a>
+                        <div class="tags">
+                            <p><span class="number">8亿</span></span>次阅读，<span class="number">30万</span>次讨论</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://wx2.sinaimg.cn/large/001WLsZ7ly1gilu1auknrj60dw0dwgmt02.jpg" width="95"
+                        height="95" alt="">
+                    <div class="txt">
+                        <a href="https://3w.huanqiu.com/a/de583b/3zppNXp1KRQ?agt=20">
+                            <span class="topic">#华为高管回应芯片#</span>
+                            <div class="subtitle">芯片问题给了企业反思，没有选择就是最好的选择。“限制反而让大家有一个非常好的机会，危、机并存。”</div>
+                        </a>
+                        <div class="tags">
+                            <p><span class="number">8亿</span></span>次阅读，<span class="number">30万</span>次讨论</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body> 
