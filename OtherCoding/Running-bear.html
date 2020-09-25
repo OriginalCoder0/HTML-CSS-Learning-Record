@@ -1,0 +1,57 @@
+<!--
+ * @Author: OriginalCoder
+ * @Date: 2020-09-10 16:35:50
+ * @version: 
+ * @LastEditTime: 2020-09-18 18:58:39
+ * @LastEditors: OriginalCoder
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>奔跑的熊</title>
+    <style>
+      body {
+        /* background: url("./images/01.png"); */
+      }
+      .box {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: url("./images/01.png") no-repeat;
+        animation: test1 1.5s steps(8) infinite, test8 2s forwards;
+      }
+      @keyframes test1 {
+        0% {
+          background-position: 20px 20px;
+        }
+
+        100% {
+          background-position: -1600px 0px;
+        }
+      }
+      @keyframes test8 {
+        0% {
+          left: 800px -20px;
+        }
+        10% {
+          left: 800px -20px;
+        }
+        /* 20%{left: 400px;}
+            30%{left: 600px;}
+            40%{left: 800px;}
+            50%{left: 1000px;}
+            60%{left: 1200px;}
+            70%{left: 1400px;}
+            80%{left: 1600px;}
+            90%{left: 1800px;}
+            100%{left: 1900px;} */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
