@@ -1,0 +1,193 @@
+<!--
+ * @Author: OriginalCoder
+ * @Date: 2020-09-23 14:12:55
+ * @version: 
+ * @LastEditTime: 2020-09-25 23:51:52
+ * @LastEditors: OriginalCoder
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
+    <style type="text/css">
+      a {
+        color: black;
+      }
+      a:link {
+        text-decoration: none;
+      } /* 未被访问的链接 */
+      a:visited {
+        text-decoration: none;
+      } /* 已被访问的链接 */
+      a:hover {
+        color: #4e6ef2;
+        text-decoration: none;
+      } /* 鼠标指针移动到链接上 */
+      a:active {
+        text-decoration: none;
+      }
+      #main {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 70%;
+      }
+      #mian div {
+        width: 100px;
+        height: 100px;
+      }
+      .all {
+        /* display: flex;
+        flex-direction: column; */
+        padding-right: 95px;
+        padding-left: 105px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .live-card {
+        /* color: #505050;
+        font-size: 12px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        width: 206px; */
+      }
+      .row {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .top-content * {
+        /* 文字在图片后面居中对齐 */
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        position: relative;
+        /* left: 120px; */
+      }
+      .video-title {
+        font-size: 24px;
+        color: #000000;
+      }
+      .text-info {
+        text-align: center;
+        font-size: 12px;
+        box-sizing: border-box;
+        margin: 0;
+        padding-left: 30px;
+        color: #505050;
+        line-height: 28px;
+      }
+      .container {
+        width: 1160px;
+        height: 520px;
+        margin: 0 auto;
+        display: flex;
+        border: 4px solid #ededed;
+        border-radius: 4px;
+      }
+      .up {
+      }
+      .avatar {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+      }
+      .desc {
+      }
+      .right-video-banner {
+        width: 320px;
+        height: 450px;
+        float: right;
+        margin-top: -240px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="all">
+      <div class="top-content">
+        <img
+          style="padding-right: 15px; width: 36px; height: 36px"
+          src="https://wx3.sinaimg.cn/mw690/006nMOhAgy1gj24apl46mj301g01f0sh.jpg"
+          alt=""
+        />
+        <span class="video-title">
+          <a
+            style="font-size: 20px"
+            href="https://live.bilibili.com/?spm_id_from=333.851.b_62696c695f7265706f72745f6c697665.1"
+            target="blank"
+            >正在直播</a
+          >
+          <div class="text-info">
+            <span>当前共有26409个在线直播</span>
+          </div>
+        </span>
+      </div>
+      <!-- 直播列表 -->
+      <div id="main">
+        <div class="live_list">
+          <div class="live-card">
+            <video
+              style="width: 206px"
+              height="116px"
+              poster="https://i0.hdslb.com/bfs/archive/8ac9d8dc7fd1d05950172756d6837582e7176d7c.jpg"
+              src="https://www.bilibili.com/video/BV1Cp4y1Y7u3?spm_id_from=333.851.b_62696c695f7265706f72745f646f756761.9"
+            ></video>
+            <video
+              style="width: 206px"
+              height="116px"
+              poster="https://i0.hdslb.com/bfs/archive/8ac9d8dc7fd1d05950172756d6837582e7176d7c.jpg"
+              src="https://www.bilibili.com/video/BV1Cp4y1Y7u3?spm_id_from=333.851.b_62696c695f7265706f72745f646f756761.9"
+            ></video>
+            <video
+              style="width: 206px"
+              height="116px"
+              poster="https://i0.hdslb.com/bfs/archive/8ac9d8dc7fd1d05950172756d6837582e7176d7c.jpg"
+              src="https://www.bilibili.com/video/BV1Cp4y1Y7u3?spm_id_from=333.851.b_62696c695f7265706f72745f646f756761.9"
+            ></video>
+            <video
+              style="width: 206px"
+              height="116px"
+              poster="https://i0.hdslb.com/bfs/archive/8ac9d8dc7fd1d05950172756d6837582e7176d7c.jpg"
+              src="https://www.bilibili.com/video/BV1Cp4y1Y7u3?spm_id_from=333.851.b_62696c695f7265706f72745f646f756761.9"
+            ></video>
+            <video
+              style="width: 206px"
+              height="116px"
+              poster="https://i0.hdslb.com/bfs/archive/8ac9d8dc7fd1d05950172756d6837582e7176d7c.jpg"
+              src="https://www.bilibili.com/video/BV1Cp4y1Y7u3?spm_id_from=333.851.b_62696c695f7265706f72745f646f756761.9"
+            ></video>
+            <video
+              style="width: 206px"
+              height="116px"
+              poster="https://i0.hdslb.com/bfs/archive/8ac9d8dc7fd1d05950172756d6837582e7176d7c.jpg"
+              src="https://www.bilibili.com/video/BV1Cp4y1Y7u3?spm_id_from=333.851.b_62696c695f7265706f72745f646f756761.9"
+            ></video>
+            <video
+              style="width: 206px"
+              height="116px"
+              poster="https://i0.hdslb.com/bfs/archive/8ac9d8dc7fd1d05950172756d6837582e7176d7c.jpg"
+              src="https://www.bilibili.com/video/BV1Cp4y1Y7u3?spm_id_from=333.851.b_62696c695f7265706f72745f646f756761.9"
+            ></video>
+            <video
+              style="width: 206px"
+              height="116px"
+              poster="https://i0.hdslb.com/bfs/archive/8ac9d8dc7fd1d05950172756d6837582e7176d7c.jpg"
+              src="https://www.bilibili.com/video/BV1Cp4y1Y7u3?spm_id_from=333.851.b_62696c695f7265706f72745f646f756761.9"
+            ></video>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img
+          class="right-video-banner"
+          src="https://i0.hdslb.com/bfs/live/256b8cbe189a2b14209ab29cd7c985088a94c8bc.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
