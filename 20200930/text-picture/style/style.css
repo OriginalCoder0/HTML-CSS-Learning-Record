@@ -1,0 +1,102 @@
+body {
+  margin: 0 auto;
+  width: 980px;
+}
+hr {
+  color: #ccc;
+}
+.header {
+  height: 56px;
+}
+.logo {
+  padding-top: 10px;
+}
+.banner1 {
+  padding-top: 12px;
+  padding-left: 12px;
+  position: absolute;
+}
+.text {
+  top: 0;
+  right: 0;
+  float: right;
+  padding-left: 730px;
+}
+.text-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ec8a39;
+  text-align: center;
+}
+.text-desc1 {
+  font-size: 15px;
+}
+.text-desc2 {
+  font-size: 20px;
+}
+.text-content {
+  font-size: 15px;
+  line-height: 20px;
+}
+.content {
+  text-indent: 1em;
+  line-height: 20px;
+}
+.content-time {
+  font-weight: bold;
+  color: #009933;
+  font-style: italic;
+}
+.text-bottom {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+  padding-top: 15px;
+}
+.share-desc {
+  font-style: italic;
+  color: #666666;
+  font-size: 10px;
+}
+.pic-middle {
+  padding-top: 20px;
+}
+.icon {
+  padding-top: 20px;
+}
+
+/* 评论部分 */
+.message {
+}
+.passerby-one {
+  line-height: 30px;
+}
+.avatar {
+  /* height: 40px;
+  width: 40px; */
+  border-radius: 20px;
+}
+.time {
+  color: #999;
+  font-size: small;
+}
+.message-content {
+  text-indent: 1em;
+  line-height: 30px;
+}
+
+.tuniu {
+  font-size: small;
+}
+.url {
+  color: #f60;
+  font-size: small;
+}
+.blue-style {
+  color: #1d5983;
+  font-size: small;
+}
+
+.small-size {
+  font-size: small;
+}

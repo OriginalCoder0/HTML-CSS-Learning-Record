@@ -1,0 +1,61 @@
+body {
+  margin: 0 auto;
+  width: 980px;
+}
+.header {
+  height: 56px;
+}
+.split {
+  color: #ccc;
+}
+
+.shuo {
+  font-family: '微软雅黑';
+  font-size: xx-large;
+  color: orange;
+}
+.you {
+  font-family: '微软雅黑';
+  font-size: xx-large;
+  color: orange;
+}
+
+.lv {
+  font-family: '微软雅黑';
+  font-size: -webkit-xxx-large;
+  color: orange;
+}
+.underline {
+  text-decoration: underline;
+}
+.month {
+  color: #009933;
+}
+.next-month {
+  color: #009933;
+}
+.detail {
+  color: #f90;
+}
+.source {
+  color: #666666;
+}
+.time {
+  color: #999;
+  font-size: small;
+}
+.tuniu {
+  font-size: small;
+}
+.url {
+  color: #f60;
+  font-size: small;
+}
+.blue-style {
+  color: #1d5983;
+  font-size: small;
+}
+
+.small-size {
+  font-size: small;
+}
