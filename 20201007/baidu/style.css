@@ -1,0 +1,54 @@
+.nav a {
+  color: black;
+}
+.nav a:link {
+  text-decoration: none;
+}
+.nav a:hover {
+  color: #4e6ef2;
+  text-decoration: none;
+}
+
+.change {
+  width: 300px;
+  height: 30px;
+  background-color: #4e6ef2;
+  transition: all 1s;
+}
+.change:hover {
+  width: 500px;
+  height: 50px;
+  background-color: #fe2d46;
+}
+
+.logo {
+  width: 270px;
+  height: 129px;
+}
+.search-input {
+  width: 548px;
+  height: 44px;
+}
+.search-btn {
+  width: 108px;
+  height: 44px;
+  background-color: #4e6ef2;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+ol {
+  padding: 0;
+}
+.hot {
+  color: #fe2d46;
+}
+.seach-wrapper {
+  width: 670px;
+}
+.rebang {
+  text-align: left;
+  width: 670px;
+}

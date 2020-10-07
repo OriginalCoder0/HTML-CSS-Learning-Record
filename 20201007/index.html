@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style type="text/css">
+      a {
+        color: black;
+      }
+      a:link {
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: none;
+      }
+      a:hover {
+        color: #4e6ef2;
+        text-decoration: none;
+      }
+      a:active {
+        text-decoration: none;
+      }
+      ol,li {
+          list-style: none;
+          padding: 0;
+      }
+      /* 头部文字部分 */
+      .left {
+        line-height: 22px;
+        font-size: 14px;
+        text-align: left;
+        margin: 22px 0 22px 0;
+        margin-left: 30px;
+      }
+      /* 中间搜索部分 */
+      .box {
+        width: 650px;
+        height: 0px;
+        margin: 200px auto 100px;
+        text-align: center;
+        position: relative;
+        margin-top: 40px;
+      }
+      input {
+        outline: none;
+        border: 2px solid #a7aab5;
+        height: 45px;
+        width: 550px;
+        box-sizing: border-box;
+        text-indent: 6px;
+        font-size: 16px;
+        border-radius: 10px 0 0 10px;
+      }
+      /* 输入框聚焦 */
+      input:focus {
+        color: #000;
+        background-color: #fff;
+        border-color: #4e6ef2 !important;
+        height: 45px;
+        border-radius: 10px 0 10px 10px;
+      }
+      button {
+        height: 45px;
+        width: 100px;
+        border: none;
+        color: white;
+        box-sizing: border-box;
+        background-color: #4e6ef2;
+        position: absolute;
+        left: 550px;
+        border-radius: 0 10px 10px 0;
+      }
+      .hot-title {
+        /* text-align: center; */
+        text-align: left;
+        width: 654px;
+        position: relative;
+        margin-top: 55px;
+        margin-left: 516px;
+        /* margin-left: 517px; */
+      }
+      .baiduhot div {
+        width: 50%;
+        overflow: hidden;
+        float: left;
+        line-height: 32px;
+      }
+      .baiduyixia {
+        font-size: 17px;
+      }
+      .title-content-title {
+        margin: 10px 0 0;
+        /* margin-top: 6px;  */
+        height: 32px;
+        line-height: 32px;
+        margin-left: 10px;
+      }
+      .title-content-title1 {
+        margin: 10px 0 0;
+        margin-left: 90px;
+        float: left;
+        height: 32px;
+        line-height: 32px;
+      }
+      .right-hot {
+        float: right;
+        line-height: 20px;
+      }
+      .top1 {
+        color: #fe2d46;
+      }
+      .top2 {
+        color: #f60;
+      }
+      .top3 {
+        color: #faa90e;
+      }
+      .other-top {
+        background: 0 0;
+        color: #9195a3;
+      }
+      .hot {
+          padding-top: 40px;
+          text-align: left;
+      }
+    </style>
+    <title>百度一下</title>
+  </head>
+  <body>
+    <div class="left">
+      <a href="#" target="blank">新闻</a>&nbsp;&nbsp;&nbsp;
+      <a href="#" target="blank">ha0123</a>&nbsp;&nbsp;&nbsp;
+      <a href="#" target="blank">地图</a>&nbsp;&nbsp;&nbsp;
+      <a href="#" target="blank">视频</a>&nbsp;&nbsp;&nbsp;
+      <a href="#" target="blank">贴吧</a>&nbsp;&nbsp;&nbsp;
+      <a href="#" target="blank">学术</a>&nbsp;&nbsp;&nbsp;
+      <a href="#" target="blank">更多</a>&nbsp;&nbsp;&nbsp;
+      <a href="#" target="blank">设置</a>&nbsp;&nbsp;&nbsp;
+      <a href="#" target="blank">登录</a>&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="box">
+      <form action="https://www.baidu.com/" target="blank">
+        <img
+          src="http://baidulogo.bj.bcebos.com/logo/er7xc837svb0uoc6wo3lxjm981uo70bl.gif"
+          alt="百度一下，你就知道"
+          title="百度一下，你就知道"
+          width="270"
+          height="129"
+        />
+        <input type="text"></input>
+        <button>
+          <span class="soutu-btn"></span>
+          <strong class="baiduyixia">百度一下</strong>
+        </button>
+      </form>
+
+      <!-- <div class="hot-title">
+        百度热榜
+        <div class="baiduhot">
+          <div class="left-hot">
+            <span class="title-content-title top">
+              <span class="top1">1</span>
+              <a
+                class="five"
+                href="#"
+                >2020年诺贝尔物理学奖揭晓</a>
+            </span>
+              <span class="top2">2</span>
+              <a
+                class="five"
+                href="#"
+                >2020年诺贝尔物理学奖揭晓</a>
+            </span>
+              <span class="top3">3</span>
+              <a
+                class="five"
+                href="#"
+                >2020年诺贝尔物理学奖揭晓</a>
+            </span>
+        </div>>
+        </div> -->
+    </div>
+    <div class="hot">
+        <div class="hot-title">百度热榜
+            <ol>
+                <li>
+                    <span class="title-content-title top">
+                        <span class="top1">1</span>
+                        <a href="#" >2020年诺贝尔物理学奖揭晓</a>
+                    </span>
+                </li>
+                <li>
+                    <span class="title-content-title top">
+                        <span class="top2">2</span>
+                        <a href="#" >2020年诺贝尔物理学奖揭晓</a>
+                    </span>
+                </li>
+            </ol>
+        </div>
+    </div>
+  </body>
+</html>
