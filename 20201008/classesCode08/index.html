@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="../font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style type="text/css">
+      p::before,
+      p::after {
+        content: "--";
+        color: red;
+      }
+      i::before {
+          content: "\124";
+      }
+      .content {
+          width: 200px;
+          height: 200px;
+          border: 3px solid #6cc23a;
+          padding: 5px;
+          margin-top: 5px 10px 2px 3px;
+      }
+
+      .container {
+          height: 0px;
+          width: 0px;
+          /* border-bottom: 10px solid red;
+          border-left: 10px solid transparent; */
+          border-left: 10px solid blue;
+          border-bottom: 10px solid transparent;
+      }
+      .circle {
+          height: 150px;
+          width: 150px;
+          border:10px solid red;
+          border-radius:  100%;
+      }
+      .box {
+          margin: 0 auto;
+      }
+      .left, .right {
+          height: 100px;
+          width: 100px;
+          padding: 5px;
+      }
+      .left  {
+          border: 2px solid red;
+          /* margin-right: 10px; */
+          margin: 10px auto;
+      }
+      .right {
+          border: 2px solid blue;
+          margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+        <p>web课程</p>
+        <p>Java课程</p>
+        <i class="fa fa-camera-retro">相机</i>
+        <i>你好</i>
+        </div>
+    </div>
+
+    <div class="content">文本内容编辑在这里</div>
+
+    <div class="container"></div>
+    <div class="circle"></div>
+
+    <div class="box">
+        <div class="left">
+            红
+        </div>
+        <div class="right">
+            蓝
+        </div>
+    </div>
+
+
+    <div></div>
+  </body>
+</html>
