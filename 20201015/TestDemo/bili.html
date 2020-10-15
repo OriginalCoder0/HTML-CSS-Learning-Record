@@ -1,0 +1,93 @@
+<!--
+ * @Author: OriginalCoder
+ * @Date: 2020-10-15 21:22:38
+ * @version: 
+ * @LastEditTime: 2020-10-15 21:37:24
+ * @LastEditors: OriginalCoder
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      a {
+        text-decoration: none;
+      }
+
+      .item {
+        cursor: pointer;
+        position: relative;
+        margin-left: 50px;
+      }
+
+      .item:hover .sub-item {
+        display: block;
+      }
+
+      .star {
+        background: #73c9e5;
+        color: #fff;
+        margin-left: 1px;
+        font-size: 12px;
+        border-radius: 2px;
+        padding: 0 1px;
+      }
+
+      .sub-item {
+        background-color: white;
+        width: 62px;
+        padding: 0;
+        font: 14px;
+        border-radius: 3px;
+        color: #606266;
+        position: absolute;
+        bottom: 30px;
+        left: -11px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+        display: none;
+      }
+
+      .name {
+        display: block;
+        font-size: 12px;
+        padding: 10px 13px;
+        color: #212121;
+        transition: color 0.6s;
+      }
+
+      .popper__arrow {
+        width: 0px;
+        height: 0px;
+        border-width: 5px 5px 0 5px;
+        border-style: solid;
+        border-color: white transparent transparent transparent;
+        position: absolute;
+        bottom: -5px;
+        left: 26px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img
+      src="https://i0.hdslb.com/bfs/archive/54fa1faa44f3624752af29bae81f714977793c72.png"
+      alt=""
+    />
+    <div class="item">
+      <div>
+        <span>娱乐</span>
+        <em class="star">999+</em>
+      </div>
+
+      <div class="sub-item">
+        <a href="//www.bilibili.com/v/ent/variety/" class="name">综艺</a
+        ><a href="//www.bilibili.com/v/ent/star/" class="name">明星</a>
+        <div class="popper__arrow"></div>
+      </div>
+    </div>
+  </body>
+</html>
