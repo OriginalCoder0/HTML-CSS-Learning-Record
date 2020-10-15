@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>日历</title>
+    <style type="text/css">
+      input {
+        margin: 5px;
+      }
+      input:hover {
+        text-decoration: none;
+      }
+      .box {
+        margin-top: 40px;
+        width: 500px;
+        height: 400px;
+        margin: 0 auto;
+        border: 1px solid #52c2c2;
+      }
+      .left,
+      .right {
+        display: inline-block;
+      }
+      .left {
+        height: 400px;
+        width: 350px;
+        background-color: #ffffff;
+      }
+      .right {
+        height: 400px;
+        width: 150px;
+        background-color: #2d83b4;
+        float: right;
+      }
+      .yearmonth {
+        margin-top: 10px;
+      }
+      .year {
+        margin-left: 15px;
+        width: 85px;
+      }
+      .month {
+        margin-left: 5px;
+        width: 75px;
+      }
+      .today {
+        font-size: 12px;
+        margin-left: 30px;
+      }
+      hr {
+        text-decoration: line-through;
+        color: #48c4a5;
+        width: 318px;
+      }
+
+      .date {
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: center;
+      }
+      .day-center {
+        background-color: #d8b657;
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        margin: 46px;
+        text-align: center;
+      }
+      .week {
+        margin-top: 30px;
+        margin-left: 29px;
+        letter-spacing: 12px;
+        font-weight: bold;
+      }
+
+      .day {
+        margin-top: 30px;
+        margin-left: 29px;
+        letter-spacing: 0px;
+        font-weight: bold;
+        line-height: 37px;
+        /* letter-spacing: 2px; */
+      }
+      td {
+        width: 38px;
+        height: 40px;
+        text-align: center;
+        /* border: 1px solid #dcdcdc; */
+      }
+
+      .time {
+        margin-left: 37px;
+        font-size: 20px;
+      }
+      .weektime {
+        font-size: 25px;
+        margin-left: 37px;
+        margin-bottom: 10px;
+      }
+      .last {
+        color: #dfdfdf;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="left">
+        <div class="yearmonth">
+          <!-- <input type="date" /> -->
+          <select class="year">
+            <option>请选择</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+          </select>
+          <select class="month">
+            <option>请选择</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+          </select>
+          <span class="today">返回今天</span>
+          <hr />
+          <div class="weekday">
+            <div class="week">
+              <span class="sunday">日</span>
+              <span class="Monday">一</span>
+              <span class="Tuesday">二</span>
+              <span class="Wednesday">三</span>
+              <span class="Thursday">四</span>
+              <span class="Friday">五</span>
+              <span class="Saturday">六</span>
+            </div>
+            <div class="day">
+              <table>
+                <tr>
+                  <td class="last">27</td>
+                  <td class="last">28</td>
+                  <td class="last">29</td>
+                  <td class="last">30</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td>31</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <p class="date">2020年10月14日</p>
+        <span class="day-center">14</span>
+        <span class="time">10:20:56</span>
+        <span class="weektime">星期三</span>
+      </div>
+    </div>
+  </body>
+</html>

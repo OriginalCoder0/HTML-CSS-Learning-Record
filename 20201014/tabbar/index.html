@@ -1,0 +1,65 @@
+<!--
+ * @Author: OriginalCoder
+ * @Date: 2020-10-14 12:23:35
+ * @version: 
+ * @LastEditTime: 2020-10-14 21:30:30
+ * @LastEditors: OriginalCoder
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>浮动的案例</title>
+    <style>
+      .clear::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+      .box {
+        /* width: 30px; */
+        height: 30px;
+      }
+      .box1 {
+        float: left;
+        background-color: red;
+      }
+      .box2 {
+        float: left;
+        background-color: blue;
+      }
+      .box3 {
+        background-color: yellow;
+        float: right;
+      }
+      .cls {
+        clear: both;
+      }
+
+      /* 清除浮动对元素的影响 */
+      .clear::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <br class="cls" />
+      <div class="box3">box3</div>
+    </div> -->
+
+    <!-- 清除父元素对子元素的影响，在CSS中，加入.clear::after -->
+    <div class="clear">
+      <div class="box box1">box1</div>
+      <div class="box box2">box2</div>
+    </div>
+    <div class="box box3">box3</div>
+  </body>
+</html>

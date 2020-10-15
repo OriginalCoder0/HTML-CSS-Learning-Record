@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.rili {
+  width: 500px;
+  margin: 0 auto;
+  border: 2px solid rgb(69, 144, 241);
+  background-color: rgb(69, 144, 241);
+}
+.year,
+.month {
+  width: 80px;
+  margin-left: 10px;
+}
+.zou {
+  width: 70%;
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+  display: inline-block;
+}
+.nianyue {
+  height: 50px;
+  line-height: 50px;
+}
+.nianyue span {
+  margin-left: 35px;
+}
+hr {
+  margin-left: 10px;
+}
+.xingqi,
+.day {
+  font-size: 18px;
+  line-height: 50px;
+}
+.xingqi span,
+.day span {
+  margin-left: 14px;
+  margin-right: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+}
+
+.you {
+  width: 30%;
+  float: right;
+  line-height: 80px;
+  text-align: center;
+}
+.ersan {
+  width: 80px;
+  height: 80px;
+  font-size: 60px;
+  display: inline-block;
+  background-color: rgb(255, 200, 17);
+}
+.shijian {
+  font-size: 20px;
+}

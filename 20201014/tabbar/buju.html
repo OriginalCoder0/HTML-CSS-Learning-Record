@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>学习分栏布局</title>
+    <style>
+      /* 清除浮动对元素的影响 */
+      .clear::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+      .page {
+        width: 85%;
+        height: 600px;
+        margin: 0 auto;
+      }
+      .header,
+      .footer {
+        height: 40px;
+        background-color: red;
+      }
+      .content {
+        height: 50%;
+      }
+      .left {
+        float: left;
+        width: 20%;
+        height: 300px;
+        background-color: blue;
+      }
+      .main {
+        float: left;
+        width: 60%;
+        height: 300px;
+        background-color: gray;
+      }
+      .right {
+        float: right;
+        width: 20%;
+        height: 300px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">header</div>
+      <div class="content clear">
+        <div class="left">left</div>
+        <div class="main">main</div>
+        <div class="right">right</div>
+      </div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
