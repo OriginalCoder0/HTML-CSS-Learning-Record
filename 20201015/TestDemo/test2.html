@@ -1,0 +1,65 @@
+<!--
+ * @Author: OriginalCoder
+ * @Date: 2020-10-16 11:14:42
+ * @version: 
+ * @LastEditTime: 2020-10-16 22:52:23
+ * @LastEditors: OriginalCoder
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        position: relative;
+        top: 100px;
+        left: 300px;
+        width: 80px;
+        height: 30px;
+        text-align: center;
+      }
+      .hiddenbox {
+        position: relative;
+        left: 300px;
+        visibility: hidden;
+      }
+      .box:hover ~ .hiddenbox {
+        position: relative;
+        top: -4px;
+        width: 80px;
+        height: 60px;
+        text-align: center;
+        border-radius: 4px;
+        background-color: rgb(243, 242, 242);
+        visibility: visible;
+        box-shadow: 0 10px 10px 0 #ddd;
+      }
+      .box1 {
+        width: 78px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .box:hover ~ .angle {
+        position: relative;
+        top: -4px;
+        left: 329px;
+        width: 0;
+        height: 0;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-top: 10px solid rgb(243, 242, 242);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">娱乐</div>
+    <div class="hiddenbox">
+      <div class="box1">综艺</div>
+      <div class="box1">明星</div>
+    </div>
+    <div class="angle"></div>
+  </body>
+</html>
