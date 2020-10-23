@@ -1,0 +1,67 @@
+<!--
+ * @Author: OriginalCoder
+ * @Date: 2020-10-23 20:15:04
+ * @version: 
+ * @LastEditTime: 2020-10-23 21:00:36
+ * @LastEditors: OriginalCoder
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .title {
+        width: 360px;
+        height: 230px;
+        overflow: hidden;
+        position: relative;
+      }
+      .title img {
+        width: 360px;
+        height: 230px;
+        transition: all 0.3s;
+      }
+      .title:hover img {
+        transform: scale(2);
+      }
+      .bottom {
+        position: absolute;
+        background-color: rgb(209, 136, 26);
+        width: 360px;
+        height: 130px;
+        top: 80%;
+        transition: all 0.3s;
+      }
+
+      p {
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+      }
+      .look {
+        display: inline-block;
+        padding: 5px 12px;
+        border: 1px solid rgba(225, 225, 225, 0.6);
+        border-radius: 8px;
+        color: rgba(225, 225, 225, 0.6);
+        margin-left: 135px;
+      }
+      .bottom:hover {
+        position: absolute;
+        top: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <img src="./1.jpg" alt="" />
+      <div class="bottom">
+        <p>Web前端设计</p>
+        <span class="look">观看视频</span>
+      </div>
+    </div>
+  </body>
+</html>
