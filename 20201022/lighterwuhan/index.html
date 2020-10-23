@@ -1,0 +1,42 @@
+<!--
+ * @Author: OriginalCoder
+ * @Date: 2020-10-23 21:32:39
+ * @version: 
+ * @LastEditTime: 2020-10-23 21:34:31
+ * @LastEditors: OriginalCoder
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 600px;
+        height: 650px;
+        display: block;
+        margin: 0 auto;
+        filter: grayscale(1);
+        transition: all 3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        id="btn2"
+        src="https://mmbiz.qpic.cn/mmbiz_jpg/xrFYciaHL08BMqJHibZNtafa9nkBVlUr5qX5cotNibgRrj4fKZkJ5vWD6LgOW0fCDIEdsSfKRMnZIpfDzDPVteL9g/640?wx_fmt=jpeg"
+        onclick="threeFn(id)"
+        alt=""
+      />
+    </div>
+  </body>
+  <script type="text/javascript">
+    function threeFn(x) {
+      var btn = document.getElementById(x);
+      btn.style.webkitFilter = "none";
+    }
+  </script>
+</html>
