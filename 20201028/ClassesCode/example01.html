@@ -1,0 +1,64 @@
+<!--
+ * @Author: OriginalCoder
+ * @Date: 2020-10-28 14:32:20
+ * @version: 
+ * @LastEditTime: 2020-10-28 14:41:13
+ * @LastEditors: OriginalCoder
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      #nav a {
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        padding: 6px 10px 4px;
+        color: #000000;
+        margin: 0 2px;
+        float: left;
+        position: relative;
+      }
+      #nav a:after {
+        content: "";
+        bottom: -7px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        border-bottom: 2px solid red;
+        transform: scaleX(0);
+        transform-origin: 50% 50%;
+        transition: transform 0.3s ease-out;
+      }
+      #nav a:hover:after {
+        transform: scaleX(1);
+      }
+
+      .box {
+        background-color: yellowgreen;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 400px;
+        height: 400px;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <a href="#">首页</a>
+      <a href="#">中心简介</a>
+      <a href="#">政策法规</a>
+      <a href="#">常用下载</a>
+      <a href="#">为你服务</a>
+      <a href="#">技术支持和服务</a>
+    </div>
+    <div class="box"></div>
+  </body>
+</html>

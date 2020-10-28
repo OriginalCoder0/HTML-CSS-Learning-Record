@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        background: url(./images/1.jpg) no-repeat top center fixed;
+        background-size: 100% auto;
+      }
+      .content {
+        width: 1000px;
+        height: 1000px;
+        overflow: hidden;
+        margin: 100px auto;
+        position: relative;
+      }
+      img {
+        z-index: 1;
+        width: 20%;
+        position: absolute;
+        height: auto;
+        padding: 10px 10px 15px 10px;
+        background: #ffffff;
+        border: 1px solid #ccc;
+        transition: 0.5s;
+      }
+      img:hover {
+        z-index: 2;
+        transform: scaleX(1.5);
+        box-shadow: -10px 10px 20px #000000;
+      }
+      .pic1 {
+        left: 60px;
+        top: 50px;
+        transform: rotate(20deg);
+      }
+      .pic2 {
+        left: 350px;
+        top: 50px;
+        transform: rotate(-40deg);
+      }
+      .pic3 {
+        left: 660px;
+        top: 50px;
+        transform: rotate(40deg);
+      }
+      .pic4 {
+        left: 100px;
+        top: 280px;
+        transform: rotate(-20deg);
+      }
+      .pic5 {
+        left: 450px;
+        top: 280px;
+        transform: rotate(-80deg);
+      }
+      .pic6 {
+        left: 660px;
+        top: 290px;
+        transform: rotate(20deg);
+      }
+      .pic7 {
+        left: 681px;
+        top: 480px;
+        transform: rotate(-25deg);
+      }
+      .pic8 {
+        left: 380px;
+        top: 410px;
+        transform: rotate(45deg);
+      }
+      .pic9 {
+        left: 18px;
+        top: 483px;
+        transform: rotate(20deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <img class="pic1" src="./images/1.jpg" alt="" />
+      <img class="pic2" src="./images/2.jpg" alt="" />
+      <img class="pic3" src="./images/3.jpg" alt="" />
+      <img class="pic4" src="./images/4.jpg" alt="" />
+      <img class="pic5" src="./images/5.jpg" alt="" />
+      <img class="pic6" src="./images/6.jpg" alt="" />
+      <img class="pic7" src="./images/7.jpg" alt="" />
+      <img class="pic8" src="./images/8.jpg" alt="" />
+      <img class="pic9" src="./images/9.jpg" alt="" />
+    </div>
+  </body>
+</html>

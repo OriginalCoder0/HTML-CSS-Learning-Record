@@ -1,0 +1,115 @@
+<!--
+ * @Author: OriginalCoder
+ * @Date: 2020-10-28 14:32:20
+ * @version: 
+ * @LastEditTime: 2020-10-28 16:01:44
+ * @LastEditors: OriginalCoder
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>武汉传媒学院主站</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+      div,
+      img,
+      ul,
+      li,
+      dl,
+      dt,
+      dd,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      form,
+      p {
+        padding: 0;
+        margin: 0;
+        border: 0;
+      }
+      .page {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .main {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      .p1 {
+        background-image: url(./imgs/p1_bg.jpg);
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+      }
+      .logo {
+        z-index: 1;
+        position: absolute;
+        left: 2.6%;
+        top: 40px;
+        width: 312px;
+        height: 77px;
+      }
+      .p1 .p1_txt {
+        left: 10%;
+        top: 32%;
+        width: 80%;
+      }
+      .p1_txt {
+        position: absolute;
+        left: 19.5%;
+        top: 31.5%;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      @media screen and (max-width: 767px) {
+        .logo {
+          top: 15px;
+          width: 200px;
+          height: auto;
+        }
+      }
+      @media screen and (max-width: 992px) and (min-width: 768px) {
+        .p1 .p1_txt {
+          left: 10%;
+          top: 32%;
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="main" style="height: 850px">
+        <!-- 左上区域 -->
+        <div class="swiper p1">
+          <a class="logo" href="#">
+            <img src="./imgs/logo2.png" alt="" />
+          </a>
+          <div class="p1_txt">
+            <img src="./imgs/campus-bg-hd.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
